@@ -94,7 +94,7 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "usman@gatewayconsultacy.com",
+    user: "usman@gatewayconsultnacy.com",
     pass: "Usman@btc4",
   },
 });
@@ -117,7 +117,7 @@ const forgotPassword = async (req, res) => {
     // Send email with the reset link containing the user's ID
     const resetLink = `http://localhost:3000/reset-password/${user._id}`;
     const mailOptions = {
-      from: "DMI <usman@gatewayconsultacy.com>",
+      from: "DMI <usman@gatewayconsultnacy.pk>",
       to: user.email,
       subject: "Password Reset",
       html: `
