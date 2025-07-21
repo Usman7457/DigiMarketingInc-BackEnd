@@ -1,7 +1,7 @@
 const User = require("../models/user");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const login = async (req, res) => {
@@ -90,7 +90,7 @@ const updateUser = async (req, res) => {
 };
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gatewayconsultacy.com",
+  host: "smtp.gatewayconsultacy.pk",
   port: 465,
   secure: true,
   auth: {
